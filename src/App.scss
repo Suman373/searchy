@@ -1,0 +1,17 @@
+@use './styles/Navbar.scss';
+@use './styles/Header.scss';
+
+$background-color: #332f2f;
+$positive:#31af31;
+$warning:#e7d747;
+$negative:#d32828;
+$header:#1c1cb1;
+$transulecent:#f0ececaf;
+
+
+.App{
+    background: $background-color;
+    min-height: 100vh;
+    width:90rem;
+    margin:0 auto;
+}
