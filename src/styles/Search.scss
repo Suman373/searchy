@@ -1,0 +1,52 @@
+@use '../styles/utilities/variables';
+
+.searchbar-wrapper{
+    min-height:fit-content;
+    width:60rem;
+    margin:2rem auto;
+    // background:red;
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    input{
+        height:4rem;
+        width:30rem;
+        border:2px solid variables.$logo-color;
+        outline:none;
+        background:transparent;
+        margin:0 auto;
+        border-radius: 2rem;
+        text-indent: 1rem;
+        font-size: variables.$text-size-md;
+        color:variables.$logo-color;
+
+        &:focus{
+            border:none;
+            box-shadow: 0 0 10px variables.$logo-color;
+        }
+    }
+
+    .search-box{
+        min-height:4rem;
+        width:25rem;
+        margin:1rem auto;
+
+        .query-text{
+            font-size: variables.$text-size-md;
+            color:variables.$logo-color;
+        }
+    }
+
+    .search-results-wrapper{
+        min-height:20rem;
+        width:60rem;
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin:2rem auto;
+        // border: 1px solid variables.$logo-color;
+    }
+}

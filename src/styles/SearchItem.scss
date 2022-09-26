@@ -1,0 +1,12 @@
+@use '../styles/utilities/variables' as v;
+
+.image-container{
+    height:10rem;
+    width:10rem;
+    margin:1rem;
+
+    img{
+        height:100%;
+        width:100%;
+    }
+}

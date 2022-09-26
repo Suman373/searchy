@@ -1,17 +1,25 @@
-@use './styles/Navbar.scss';
-@use './styles/Header.scss';
+@use './styles/utilities/variables';
+// @use './styles/Header.scss';
+// @use './styles/Navbar.scss';
 
-$background-color: #332f2f;
-$positive:#31af31;
-$warning:#e7d747;
-$negative:#d32828;
-$header:#1c1cb1;
-$transulecent:#f0ececaf;
+*,
+*::before,
+*::after{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
 
-
-.App{
-    background: $background-color;
+body{
     min-height: 100vh;
-    width:90rem;
-    margin:0 auto;
+    width:100vw;
+    overflow-x: hidden;
+    background: variables.$background-color;
+
+    .App{
+        min-height: 100vh;
+        width:80rem;
+        // background:$positive;
+        margin:1rem auto;
+    }
 }

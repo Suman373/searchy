@@ -1,0 +1,36 @@
+@use './utilities/variables';
+
+.navbar-wrapper{
+    height:4rem;
+    width:min(100% - 2rem, 80rem);
+    
+   .nav-container{
+      margin:1.5rem;
+      display:flex;
+      align-items: center;
+      gap:1rem;
+      justify-content: flex-end;
+      position:relative;
+
+      .logo{
+        font-size: 2rem;
+        position: absolute;
+        left:1rem;
+        top:0.5rem;
+        color:variables.$logo-color;
+        text-decoration: none;
+      }
+    
+      .nav-item{
+        font-size: variables.$text-size-lg ;
+        color:variables.$text-color;
+        text-decoration: none;
+        
+        &:hover{
+            color:variables.$logo-color;
+        }
+      }
+      
+
+   }
+}

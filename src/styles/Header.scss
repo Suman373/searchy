@@ -1,0 +1,17 @@
+@use '../styles/utilities/variables';
+
+.header-wrapper{
+    min-height:10rem;
+    width:40rem;
+    margin:1rem auto;
+    text-align: center;
+    display:grid;
+    place-content: center;
+    // background-color: white;
+    
+    h2{
+        font-size: 4rem;
+        text-shadow:  0 0 3px variables.$logo-color;
+        color:variables.$logo-color;
+    }
+}
