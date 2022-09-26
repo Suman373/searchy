@@ -3,12 +3,11 @@ import '../styles/Search.scss';
 import SearchItem from './SearchItem';
 import axios from 'axios';
 // env vars
-const endpoint = process.env.local.REACT_APP_API_URI;
-const key = process.env.local.REACT_APP_API_KEY;
-const host = process.env.local.REACT_APP_API_HOST;
+const endpoint = process.env.REACT_APP_API_URI;
+const key = process.env.REACT_APP_API_KEY;
+const host = process.env.REACT_APP_API_HOST;
 
 const Search = () => {
-  console.log(endpoint);
   const [search, setSearch] = useState("");
   const [images, setImages] = useState([]);
 
